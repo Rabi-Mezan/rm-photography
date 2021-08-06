@@ -1,6 +1,8 @@
 body{
-    background-image:url(images/back2.jpg);
+    background-color:#111827;
+    background-image:url(images/back22.png);
     background-size: cover;
+    /* filter: grayscale(100px); */
     font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
 }
