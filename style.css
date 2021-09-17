@@ -2,7 +2,23 @@
     background-image: url(images/blob-3.svg);
     background-repeat: no-repeat;
 }
-
+.logo{
+    background-image: url(images/blob-2.svg);
+    background-repeat: no-repeat;
+   background-position: left;
+    
+}
 .about-me{
     background-image: url(images/wavesOpacityreverse.svg);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
