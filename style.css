@@ -9,11 +9,11 @@
     
 }
 .about-me{
-    background-image: url(images/wavesOpacityreverse.svg);
+    background-image: url(images/wavesOpacity.svg);
 }
 
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     font-family: 'Poppins', sans-serif;
 
 }

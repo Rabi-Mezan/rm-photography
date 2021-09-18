@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #e6e6e6;">
     <!-- header start -->
     <header class="header">
         <!-- navrbar start -->
@@ -75,7 +75,7 @@
     </header>
 
     <!-- main start -->
-    <main>
+    <main style="background-color: #e6e6e6;">
         <!-- gallery -->
         <div class=" flex justify-center" id="gallery-view">
             <button class="bg-green-500 mx-5 px-4 py-2 text-white rounded-lg hover:bg-green-700">
@@ -86,8 +86,8 @@
             <section class="text-gray-600 body-font">
                 <div class="container  px-5 lg:py-16 pb-4 mx-auto flex flex-wrap">
                     <div class="flex w-full mb-20 flex-wrap">
-                        <h1
-                            class="lg:text-4xl md:text-xs uppercase font-bold title-font text-center text-yellow-500 w-full lg:mb-0 -mb-16 mt-8 section-title">
+                        <h1 class="lg:text-4xl md:text-xs uppercase font-bold title-font text-center  w-full lg:mb-0 -mb-16 mt-8 section-title"
+                            style="color: #27ae60;">
                             Welcome To my gallery</h1>
                     </div>
 
@@ -216,8 +216,8 @@
         <!-- blogs -->
         <section id="blogs" class="text-gray-600 mt-4 body-font ">
             <div class=" section-title">
-                <h1
-                    class="lg:text-4xl md:text-xs uppercase font-bold title-font text-center text-yellow-500 lg:w-full lg:mb-0 -mb-16 mt-8">
+                <h1 class="lg:text-4xl md:text-xs uppercase font-bold title-font text-center  lg:w-full lg:mb-0 -mb-16 mt-12"
+                    style="color: #27ae60;">
                     BLOGS</h1>
             </div>
             <div class="container px-5 py-20 mx-auto">
@@ -425,10 +425,35 @@
             </div>
         </footer>
     </footer>
+
+    <!-- js added................................... -->
     <script>
-        document.getElementById('gallery-view').addEventListener('click', function () {
-            const gallery = document.getElementById('gallery');
-            gallery.style.display = 'block';
+
+        // hide an element
+        const hide = (elem) => {
+            elem.style.display = 'none';
+        }
+
+        // show an element
+        const show = (elem) => {
+            elem.style.display = 'block';
+        }
+
+        // toggle the element visibility
+        const toggle = (elem) => {
+
+            // if the element is visible, hide it
+            if (window.getComputedStyle(elem).display !== 'none') {
+                hide(elem);
+                return;
+            }
+
+            // show the element
+            show(elem);
+        }
+
+        const viewbtn = document.getElementById('gallery-view').addEventListener('click', function () {
+            toggle(document.querySelector('#gallery'));
         })
     </script>
 </body>
